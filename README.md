@@ -22,8 +22,8 @@ Pertanyaan yang dijawab: seberapa besar koleksi museum di tiap wilayah DKI, baga
 |---|---|---|---|
 | (a) | Unduh berkas | Data Koleksi Museum, Dinas Kebudayaan DKI Jakarta (Satu Data Jakarta / katalog data.go.id), format Excel, 7.513 baris x 5 kolom, tahun 2023-2024 | `dataset_koleksi_museum_dki.xlsx` |
 | (b-1) | API | Open-Meteo Historical Weather (cuaca harian per kota administrasi) | `api_openmeteo_*.json` |
-| (b-2) | API | WordPress REST API Museum Nasional Indonesia (metadata artikel) | `api_posts_page*.json`, `api_categories.json` |
-| (c) | Scraping | Beranda [www.museumnasional.or.id ](https://satudata.jakarta.go.id/)(BeautifulSoup) | `scraping_beranda_museumnasional.html`, `robots_museumnasional.txt` |
+| (b-2) | API | REST API Satu Data Jakarta (`https://satudata.jakarta.go.id/`) (metadata dataset) | `api_datasets_page*.json`, `api_categories.json` |
+| (c) | Scraping | Beranda https://satudata.jakarta.go.id/ (BeautifulSoup) | `scraping_beranda_satudata.html`, `robots_satudata.txt` |
 
 Tidak ada data dari Booking, Agoda, Traveloka, tiket.com, Airbnb, Tripadvisor, Google Maps, atau media sosial. Tidak ada API key atau token di notebook.
 
