@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /wp-admin/admin-ajax.php
+Disallow: /wp-admin/
+
+Sitemap: https://www.museumnasional.or.id/sitemap.xml
+Sitemap: https://www.museumnasional.or.id/sitemap.rss
+

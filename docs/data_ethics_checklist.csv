@@ -1,0 +1,10 @@
+no,aspek,status,bukti
+1,Sumber data dan URL dicantumkan,Ya,"11 entri provenance (URL, tanggal akses, lisensi, MD5) -> docs/provenance.csv"
+2,Lisensi data diperiksa dan dicatat,Ya,"Dataset (a): tanpa lisensi eksplisit, domain publik menurut portal (UU 14/2008); Open-Meteo: CC BY 4.0 non-komersial; Museum Nasional: hak cipta lembaga, hanya metadata diambil (tabel lisensi Soal 2)"
+3,robots.txt / Terms of Service diperiksa,Ya,"robots.txt disimpan (MD5 98c902c3d452d77fc78ec9e96ee15203); can_fetch beranda=True, API=True, /wp-admin/=False -> docs/bukti_robots_txt.csv"
+4,Kolom PII diidentifikasi,Ya,"Pemindaian nama kolom + regex (email, HP, NIK). PII: tidak ada; quasi-identifier: tidak ada. Catatan: 'nama_koleksi' dapat memuat nama tokoh sejarah yang telah wafat (2,211 baris dari museum Prasasti)"
+5,"PII dihapus, di-mask, atau di-pseudonimisasi",Ya,"Tidak ada PII orang hidup. 'author' (ID staf penulis), 'content', 'excerpt' dari API tidak dimasukkan ke data olahan; nama pada koleksi nisan hanya dipakai agregat"
+6,Prinsip minimalisasi data diterapkan,Ya,"API artikel: 43 kolom mentah -> 10 kolom olahan; API cuaca hanya 4 variabel harian; scraping hanya ID, judul, URL, posisi tampil; dataset (a) hanya 5 kolom"
+7,Potensi bias sampel dianalisis,Ya,"Dataset (a) hanya museum kelolaan Pemprov DKI (13 museum, tahun [2023, 2024]), bukan museum swasta/nasional/daerah lain; API artikel hanya 100 artikel terbaru (2022-04-09 s.d. 2026-10-23); beranda hanya 13 artikel pilihan redaksi; cuaca ERA5 berupa grid, bukan stasiun"
+8,Tujuan penggunaan data dinyatakan eksplisit,Ya,"Hanya untuk UTS Data Acquisition & Management (latihan akuisisi multi-sumber), non-komersial"
+9,Rencana retensi dan penghapusan data ada,Ya,"Disimpan di Colab/GitHub sampai nilai akhir semester keluar, lalu data/raw dan data/processed dihapus; provenance & checklist boleh disimpan sebagai dokumentasi"

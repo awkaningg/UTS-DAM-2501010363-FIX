@@ -1,0 +1,60 @@
+{
+  "dibuat_oleh": "Clementin Christianingsi Mune Harum (2501010363)",
+  "dibuat_pada": "2026-11-27 09:45:36 WITA",
+  "gabungan_A": {
+    "judul": "Koleksi museum DKI Jakarta + cuaca tahunan wilayah (Open-Meteo)",
+    "sumber": [
+      "berkas (dataset koleksi museum)",
+      "API (Open-Meteo)"
+    ],
+    "file_raw_berkas": "data/raw/dataset_koleksi_museum_dki.xlsx",
+    "md5_berkas": "ef0314f2d42bc102bbb7b710c943d815",
+    "file_raw_api": [
+      "data/raw/api_openmeteo_jakarta_barat.json",
+      "data/raw/api_openmeteo_jakarta_pusat.json",
+      "data/raw/api_openmeteo_jakarta_selatan.json",
+      "data/raw/api_openmeteo_jakarta_timur.json",
+      "data/raw/api_openmeteo_jakarta_utara.json"
+    ],
+    "kunci_merge": [
+      "kunci_wilayah",
+      "tahun_kunci"
+    ],
+    "jenis_join": "left",
+    "validate": "many_to_one",
+    "jumlah_baris": {
+      "kiri": 7513,
+      "kanan": 10,
+      "hasil": 7513
+    },
+    "baris_tanpa_cuaca": 0,
+    "duplikat_baru_akibat_merge": 0,
+    "file_hasil": "data/processed/hasil_gabungan_koleksi_cuaca.csv",
+    "md5_hasil": "610981f5b0b34b89d1d97c8de469745a"
+  },
+  "gabungan_B": {
+    "judul": "Artikel beranda Museum Nasional + metadata API WordPress",
+    "sumber": [
+      "scraping (beranda museumnasional.or.id)",
+      "API (WordPress REST)"
+    ],
+    "file_raw_scraping": "data/raw/scraping_beranda_museumnasional.html",
+    "md5_scraping": "62d9a38c7d99c5ccf56f74913c7256c2",
+    "file_raw_api": [
+      "data/raw/api_posts_page1.json",
+      "data/raw/api_posts_page2.json",
+      "data/raw/api_categories.json"
+    ],
+    "kunci_merge": "post_id (ID artikel WordPress)",
+    "jenis_join": "left",
+    "validate": "one_to_one",
+    "jumlah_baris": {
+      "kiri": 13,
+      "kanan": 100,
+      "hasil": 13
+    },
+    "duplikat_hasil": 0,
+    "file_hasil": "data/processed/hasil_gabungan_artikel_api_scraping.csv",
+    "md5_hasil": "493164fd329034afdbac833ef9eb8fb3"
+  }
+}

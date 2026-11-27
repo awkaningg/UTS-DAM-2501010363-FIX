@@ -1,0 +1,11 @@
+kunci_wilayah,tahun_kunci,total_koleksi,baris_koleksi,jumlah_museum,suhu_rata2_c,total_hujan_mm,hari_hujan
+jakarta barat,2023,28674.0,488,4,27.03,1980.4,252
+jakarta barat,2024,29180.0,958,4,27.22,2533.8,261
+jakarta pusat,2023,1789.0,1735,3,27.17,1808.8,237
+jakarta pusat,2024,3608.0,2001,3,27.39,2340.1,258
+jakarta selatan,2023,226.0,172,1,27.13,2046.2,258
+jakarta selatan,2024,516.0,278,1,27.25,2761.5,261
+jakarta timur,2023,144.0,130,1,27.28,2017.3,250
+jakarta timur,2024,176.0,83,1,27.41,2756.7,249
+jakarta utara,2023,1186.0,619,1,27.17,1808.8,237
+jakarta utara,2024,1175.0,1049,2,27.39,2340.1,258

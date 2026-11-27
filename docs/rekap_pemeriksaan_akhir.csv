@@ -1,0 +1,14 @@
+syarat,terpenuhi,bukti
+Dataset berkas >= 100 baris (a),YA,"7,513 baris"
+Data via API (b),YA,"cuaca 3,655 baris; artikel 100 baris (syarat >= 30)"
+Web scraping halaman statis (c),YA,13 artikel unik dari beranda
+Berkas mentah di data/raw tanpa diubah,YA,"11 berkas, MD5 cocok"
+"Provenance (URL, tanggal akses, lisensi, MD5)",YA,docs/provenance.csv
+User-Agent berisi email kampus + timeout + jeda,YA,UA=UTS-DAM-2501010363/1.0 (tugas akademik INSTIKI; kontak: 2501010363@instiki.ac.id)
+Tidak ada API key/token di notebook,YA,Open-Meteo & WordPress REST: publik tanpa key
+robots.txt diperiksa & halaman diizinkan,YA,docs/bukti_robots_txt.csv
+Data Ethics Checklist 9 butir,YA,docs/data_ethics_checklist.csv/.md
+"Merge >= 2 sumber, validate, tanpa duplikasi",YA,A: many_to_one; B: one_to_one
+Kunci merge bermakna (bukan kolom konstan),YA,kunci_wilayah+tahun; post_id
+Sumber terlarang tidak dipakai,YA,bukan Booking/Agoda/Traveloka/tiket.com/Airbnb/Tripadvisor/Google Maps/medsos
+Grafik tersimpan,YA,8 grafik di docs/charts
